@@ -487,7 +487,9 @@ To control the output, you can use these control arguments:
 - Exclude columns: [?_c=-Continent&_c=-Name](flags?_c=-Continent&_c=-Name&_format=html) ► show all columns except the Continent and Names columns
 - Add metadata: [?_meta=y](flags?_c=-Continent&_offset=10&_limit=10&_format=html&_meta=y) ► return all available metadata as HTTP headers
 
-Note: You can use `FormHandler` to render specific columns in navbar filters using `?_c=`.
+Note: 
+  - You can use `FormHandler` to render specific columns in navbar filters using `?_c=`.
+  - To get a list of unique values from a column for navbar-dropdown: `?_by=Continent&_c=Continent|unique`
 
 
 ## FormHandler groupby
